@@ -1,0 +1,11 @@
+dex2jar:  (不推荐使用, 推荐使用enjarify)
+./d2j-dex2jar.sh path/xxx.dex  会将dex转成jar
+
+procyon:
+java -jar procyon-decompiler-0.5.30.jar -jar xxx.jar -o outpath  将jar生成文件, 比jd-gui反编译生成java逻辑要清晰些
+
+enjarify: 
+enjarify.sh xxx.apk 生成jar
+
+androidmanifest还原: java -jar AXMLPrinter2.jar path/AnddroidManifext.xml >> path/AndroidManifest.txt
+
